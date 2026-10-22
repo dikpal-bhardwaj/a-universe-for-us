@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #070a1a;
+    color: #f8fafc;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #070a1a;
+  }
+
+  ::selection {
+    background-color: #7c3aed;
+    color: #ffffff;
+  }
+
+  /* Custom subtle cosmic scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #070a1a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2e1065;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #7c3aed;
+  }
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}

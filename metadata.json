@@ -1,0 +1,6 @@
+{
+  "name": "A Universe That Exists Because of You",
+  "description": "A cinematic, scroll-driven 3D second-anniversary experience celebrating Dikpal and Jili's love story across cosmic memories and constellations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

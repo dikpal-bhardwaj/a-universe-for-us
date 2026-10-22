@@ -1,0 +1,866 @@
+# MASTER PROMPT
+# A Universe That Exists Because of You
+### A cinematic, scroll-driven 3D second-anniversary experience for Dikpal and Jili
+
+## 1. Your role
+
+Act as a senior creative frontend engineer, Three.js developer, React Three Fiber specialist, GSAP animation engineer, creative director, and interactive storytelling designer.
+
+Help me build a complete, polished, frontend-only 3D anniversary website for my girlfriend, Jili, as a surprise for our second anniversary on November 4, 2026.
+
+The website's concept is:
+
+**A Universe That Exists Because of You**
+
+The experience should feel like a cinematic interactive film in which a universe gradually comes to life as the visitor scrolls. Stars form, galaxies emerge, planets appear, and real photographs become part of the cosmic environment. The story eventually reveals itself as a personal love story, culminating in a surprise dedicated to Jili.
+
+I will build this website by copying and pasting the terminal commands and complete source code you provide.
+
+You must inspect my existing project before writing implementation code. Preserve existing files and photographs. Give me exact file locations, complete code, copy-pasteable commands, and a way to verify every milestone.
+
+Do not create a generic romantic landing page or a static mockup. Build an actual, functioning, cinematic 3D experience.
+
+## 2. The real story behind the website
+
+Use the following personal details as the source of truth for the narrative.
+
+### The couple
+
+- My name: Dikpal.
+- My girlfriend's name: Jili.
+- My nickname for her: Munchkin.
+- Her nickname for me: Pol.
+- Our relationship tone: a balanced mixture of romance, playfulness, nostalgia, humour, and sincere emotion.
+- Website language: English.
+- Anniversary: November 4, 2026.
+- Proposal date: November 4, 2024, at approximately 1 AM.
+
+Do not expose either person's name on the opening screen. Keep the identity reveal for the final surprise.
+
+Before the reveal, use anonymous but intimate language such as "you", "us", "our little universe", and "the person who changed my world".
+
+The names Dikpal and Jili, together with the nicknames Pol and Munchkin, may be revealed during the ending sequence.
+
+### How our story began
+
+Dikpal and Jili met in the Computer Science department of Pragjyotish College.
+
+Jili was two years junior to Dikpal.
+
+Dikpal got Jili's phone number through one of her friends. They began chatting, and those conversations became the beginning of their relationship.
+
+At approximately 1 AM on November 4, 2024, Dikpal proposed to Jili, and she accepted.
+
+November 4, 2026, marks two years since that proposal.
+
+Do not invent an exact first-meeting date, the content of their first conversation, their first date, or other events that have not been supplied.
+
+Tell this story with warmth and cinematic subtlety. The early chapters should suggest a connection forming without revealing the couple's identities immediately.
+
+### What their relationship means
+
+Dikpal describes himself as sometimes immature and difficult to deal with, and says he struggles with anger. Despite these imperfections, Jili has stayed beside him and loved him.
+
+Dikpal appreciates her presence, patience, and love. He wants the website to express his gratitude and his commitment to loving her for the rest of his life.
+
+This part of the story must be written with tenderness and accountability.
+
+Do not romanticize anger, excuse hurtful behaviour, or imply that Jili is responsible for managing Dikpal's emotions. Express appreciation for her support while making clear that loving someone also means learning, growing, and treating them with care.
+
+An appropriate editable sentiment is:
+
+"I know I haven't always been the easiest person to love. I've had my imperfect moments, and there are parts of myself I still want to improve. But through it all, you've given me a kind of love I will never take for granted. Thank you for standing beside me, for seeing the good in me, and for being my person. I want to keep growing, keep learning to love you better, and keep choosing you."
+
+This is proposed copy, not a claim that Dikpal has already written or sent this exact message.
+
+### The personal voice
+
+Use the following sentiment as an important source of inspiration:
+
+"Despite all my imperfections, you have loved me, and I love you too, my sweet babygirl."
+
+The website should sound like a sincere message from Dikpal to Jili, not a generic AI-generated declaration.
+
+Use affectionate terms sparingly and naturally. "Munchkin", "Pol", and "my sweet babygirl" are personal details, not labels that should be repeated in every section.
+
+Keep all editable copy in a dedicated configuration file so I can refine the language myself.
+
+## 3. Core creative concept
+
+The universe begins in darkness, almost entirely empty.
+
+A single point of light appears. As the visitor scrolls, the light awakens and particles gather around it. A galaxy forms, a planet emerges, and a collection of luminous photographs begins orbiting the planet.
+
+At first, the visitor does not know whose story they are discovering.
+
+Gradually, the universe reveals its meaning through the narrative:
+
+- A connection beginning unexpectedly.
+- Conversations becoming something meaningful.
+- A moment at approximately 1 AM that changed two lives.
+- Two years of shared memories.
+- Gratitude for being loved despite imperfections.
+- A promise to keep learning, growing, and choosing one another.
+- A final surprise revealing Dikpal and Jili.
+
+The central metaphor is that the universe becomes meaningful through the relationship. It is not a scientific simulation but an artistic expression of their story.
+
+The emotional progression should be:
+
+**Wonder → Curiosity → Recognition → Nostalgia → Gratitude → Surprise → Romance.**
+
+Do not reveal the names too early.
+
+## 4. Mandatory technology stack
+
+Use:
+
+- React.
+- Vite.
+- TypeScript.
+- Three.js.
+- WebGL through Three.js.
+- React Three Fiber (`@react-three/fiber`).
+- Drei (`@react-three/drei`).
+- GSAP.
+- GSAP ScrollTrigger.
+- Motion for React where useful for independent UI animations.
+- Lucide React for interface icons.
+- Regular CSS or CSS Modules.
+
+Use React Three Fiber to construct and manage the 3D scene.
+
+Use Three.js for geometry, materials, lighting, textures, particles, and camera choreography.
+
+Use GSAP and ScrollTrigger as the primary orchestration system for the scroll-driven narrative.
+
+The camera, galaxy, planet, particles, photograph frames, lighting, typography, and major environmental transitions must respond to scroll progress.
+
+Do not merely animate HTML text over a static 3D background.
+
+Do not use Tailwind CSS.
+
+Do not introduce a backend, database, authentication service, analytics service, or external API.
+
+Use compatible package versions and verify the installed APIs.
+
+## 5. Photographs and existing assets
+
+My real photographs are located in the project-root directory:
+
+`assets/pictures/`
+
+They follow this naming convention:
+
+- `assets/pictures/1.jpg`
+- `assets/pictures/2.jpg`
+- `assets/pictures/3.jpg`
+- `assets/pictures/4.jpg`
+- `assets/pictures/5.jpg`
+- And so on.
+
+Inspect the existing project before deciding how these images should be served.
+
+A root-level `assets/` directory is not automatically served as a Vite public directory. Configure the project appropriately or use a suitable build-time asset import strategy.
+
+Preserve all existing photographs. Do not make me duplicate every file unnecessarily.
+
+Never assume how many photographs exist. Inspect the directory and support a variable number of images.
+
+Do not pretend to know the contents of a photograph without inspecting it or receiving my description.
+
+Never replace my real photographs with stock photos or AI-generated images.
+
+### How the photographs should appear
+
+Use real photographs as the visual anchors of the cosmic narrative:
+
+- Photographs orbiting the central planet.
+- Floating frames travelling along orbital paths.
+- Luminous memory portals.
+- Selected photographs connected by a constellation.
+- A collection of favourite memories surrounding the final reveal.
+
+Use real image textures on suitable 3D geometry, with appropriate framing and lighting.
+
+Preserve the original aspect ratio. Support portrait and landscape photographs.
+
+Allow a photograph to open in an accessible, larger HTML viewer with its associated caption.
+
+Do not display all photographs simultaneously. Curate the main sequence to approximately six to ten featured memories if enough suitable photographs are available.
+
+Provide an optional secondary gallery for remaining photographs.
+
+### Memory configuration
+
+Create:
+
+`src/data/memories.ts`
+
+Use a strongly typed memory manifest containing:
+
+- Unique identifier.
+- Image path.
+- Optional title.
+- Optional caption.
+- Optional date.
+- Narrative chapter.
+- Featured status.
+- Optional focal point for image cropping.
+- Optional placement or orbital order.
+
+The opening and final featured photographs should be configurable.
+
+Use only files that actually exist. Missing optional photographs must not crash the application.
+
+If photo meanings have not been supplied, use neutral editable captions and ask me to identify the significant photographs before assigning them personal stories.
+
+## 6. Art direction: a living cinematic universe
+
+Create a premium cosmic environment with:
+
+- Deep midnight-blue space.
+- Distant stars and a sense of immense scale.
+- Soft nebulae.
+- A luminous central celestial body.
+- A beautifully composed spiral galaxy.
+- A distinctive planet.
+- Elegant orbital paths.
+- Floating photographs.
+- Luminous particles and restrained trails.
+- Soft atmospheric depth.
+- Carefully controlled camera movement.
+- A transformation from near-empty darkness into a glowing, intimate cosmic world.
+
+Suggested colour palette:
+
+- Deep cosmic navy: `#090D20`
+- Midnight blue: `#141C3A`
+- Nebula violet: `#6650A4`
+- Soft lavender: `#B9A7E8`
+- Cosmic pink: `#F0A9CC`
+- Warm starlight: `#FFE8AD`
+- Pale blue: `#A8D9F0`
+- Soft white: `#F8F5FF`
+
+Use restrained bloom, tasteful lighting, subtle contrast, and carefully composed highlights.
+
+Avoid excessive neon, cartoonish space-game interfaces, random hearts, and generic romantic stock aesthetics.
+
+The website should feel like a premium interactive art experience.
+
+## 7. The cinematic scroll narrative
+
+Build the website as a sequence of connected chapters within a continuous 3D experience.
+
+Use a pinned 3D canvas and semantic HTML story sections where appropriate. Scrolling must control the progression of the story.
+
+Each chapter must have a defined scroll range, a coordinated GSAP timeline, a camera movement, appropriate environmental animation, and synchronized text.
+
+Scrolling backward must naturally reverse the animation.
+
+### Chapter 1 — Before the universe had a name
+
+Begin with near-total darkness.
+
+A single distant point of light appears against an almost empty cosmic environment.
+
+Display:
+
+"A Universe That Exists Because of You"
+
+Supporting text:
+
+"Somewhere among all the stars, a story was waiting to begin."
+
+Do not display Dikpal or Jili's names yet.
+
+As the visitor scrolls:
+
+1. The title gently fades.
+2. The camera advances through the darkness.
+3. Distant stars appear.
+4. The single point of light brightens.
+5. Tiny particles gather around it.
+6. The scene transitions toward the formation of a galaxy.
+
+The opening should be visually restrained and mysterious.
+
+### Chapter 2 — A connection, unexpectedly
+
+The particles begin forming a luminous galaxy.
+
+A pair of distant points of light gradually move into the same orbital system.
+
+This represents two lives beginning to connect.
+
+Use the real story as the underlying inspiration: Dikpal and Jili met in the Computer Science department of Pragjyotish College. Jili was two years junior to Dikpal. Dikpal obtained her number through one of her friends, and they began chatting.
+
+Present this as an intimate narrative, not a literal recreation of the college.
+
+Suggested editable text:
+
+"Sometimes, the most important chapters begin with something as small as a conversation."
+
+As the user scrolls:
+
+- The galaxy begins rotating.
+- Two points of light enter the same visual orbit.
+- A subtle connection forms between them.
+- The camera moves toward a newly emerging planet.
+- A few stars illuminate the path ahead.
+
+Do not invent an exact date, dialogue, or location within the college.
+
+### Chapter 3 — When midnight changed everything
+
+This is one of the most important chapters.
+
+The camera approaches a luminous celestial object surrounded by slowly moving particles.
+
+The environment gradually transitions toward midnight blue, violet, and warm gold.
+
+As the visitor scrolls:
+
+1. The galaxy slows down.
+2. A subtle clock-like celestial motif appears.
+3. The camera moves toward a central point of light.
+4. The visual environment becomes quieter.
+5. A glowing "1:00 AM" appears as an editorial text element.
+6. The date "November 4, 2024" is revealed.
+7. Two points of light move closer together and become one connected constellation.
+
+The narrative must communicate that at approximately 1 AM on November 4, 2024, Dikpal proposed to Jili, and she accepted.
+
+Suggested text:
+
+"At around 1 AM, on November 4, 2024, one question changed the direction of my universe."
+
+Follow it with:
+
+"And you said yes."
+
+Give the acceptance moment a beautiful visual payoff. The two points of light connect, the surrounding galaxy brightens, and the camera slowly pulls back to reveal the newly formed planet.
+
+Do not invent the exact words used in the proposal.
+
+Do not reveal the couple's names during this chapter. The final identity reveal should remain special.
+
+### Chapter 4 — Two years of little universes
+
+The camera approaches the planet, now surrounded by photographs.
+
+This is the main memory chapter.
+
+As the user scrolls:
+
+- Real photographs appear one at a time.
+- Each image travels along a carefully choreographed orbital path.
+- Selected photographs move closer to the camera.
+- Frames rotate gently into position.
+- The surrounding stars become less prominent when a photograph is in focus.
+- A caption fades in alongside the image.
+- The camera transitions toward the next featured memory.
+
+Use the actual photographs from `assets/pictures/`.
+
+Each memory can have an optional caption, but do not require every photograph to have a date or story.
+
+Suggested generic copy:
+
+"Two years of little moments that became some of my favourite parts of life."
+
+Allow me to replace the generic text with real memories later.
+
+Do not invent the first date, trips, conversations, birthdays, or other relationship milestones.
+
+### Chapter 5 — You stayed, even when I was imperfect
+
+This chapter should be emotionally meaningful without romanticizing unhealthy behaviour.
+
+The camera moves away from the brighter galaxy into a quieter region of space, where selected photographs appear inside gently illuminated frames.
+
+The surrounding environment becomes calmer and more intimate.
+
+The narrative acknowledges that Dikpal has sometimes been immature, difficult to deal with, and struggled with anger. Jili has nevertheless continued to stand beside him and love him.
+
+The message should communicate gratitude, vulnerability, and a desire to grow.
+
+Suggested editable copy:
+
+"I know I haven't always been the easiest person to love. I've had my imperfect moments, and there are parts of myself I still want to improve.
+
+"But you've stood beside me through so much, and you've shown me a kind of love I never want to take for granted.
+
+"Thank you for loving me, even when I'm still learning. I want to keep growing, keep becoming a better partner, and keep learning how to love you in the ways you deserve."
+
+As the text progresses:
+
+- Photographs appear softly around the scene.
+- The camera moves slowly through them.
+- A small constellation forms from the selected images.
+- Warm golden highlights emerge in the surrounding darkness.
+- The environment gradually brightens again.
+
+Do not suggest that Jili is responsible for fixing Dikpal's anger or managing his emotions.
+
+Do not frame mistreatment as proof of love.
+
+The message should celebrate her support while expressing personal responsibility and a commitment to growth.
+
+This chapter must feel sincere, not guilt-inducing.
+
+### Chapter 6 — Every star is a reason
+
+The camera pulls back to reveal a constellation connected to the selected memories.
+
+Each point represents something meaningful about the relationship.
+
+As the visitor scrolls:
+
+- Additional points of light appear.
+- Selected photographs illuminate.
+- Thin, elegant lines connect the points.
+- Short messages appear at carefully chosen moments.
+- The constellation gradually forms a beautiful composition.
+
+Potential themes include:
+
+- Gratitude.
+- Shared memories.
+- Affection.
+- Laughter.
+- The small details that make Jili special.
+- The desire to continue growing together.
+
+Use editable messages. Do not invent specific inside jokes or personal anecdotes.
+
+Avoid repetitive declarations of love. Each line should add something new to the narrative.
+
+### Chapter 7 — A universe still waiting for us
+
+The camera leaves the constellation and moves toward a distant cosmic horizon.
+
+The galaxy opens into a wider, more luminous environment.
+
+As the visitor scrolls:
+
+- New stars appear in the distance.
+- The camera travels along a gentle orbital path.
+- A few glowing celestial points emerge as symbols of future possibilities.
+- The environment becomes warmer and brighter.
+- Short, editable messages reveal hopes for the future.
+
+This chapter represents the years still ahead.
+
+Do not invent travel plans, marriage plans, or specific promises that have not been supplied.
+
+Use a simple, honest message about continuing to choose one another, learning together, and sharing more of life's ordinary and extraordinary moments.
+
+### Chapter 8 — The universe reveals who it belongs to
+
+This is the major surprise reveal.
+
+Until this point, the opening and narrative chapters must not display Dikpal or Jili's names prominently.
+
+The camera slowly pulls back to reveal the full galaxy and its central planet.
+
+Selected photographs settle into a beautiful, balanced composition.
+
+The background particles slow down. The planet glows softly. The constellation becomes visible across the surrounding stars.
+
+Then reveal the identities in a carefully choreographed sequence.
+
+First, display:
+
+"Two years ago, at around 1 AM, you said yes."
+
+Then reveal:
+
+"Happy Second Anniversary, Jili."
+
+Follow it with:
+
+"From your Pol, forever."
+
+The names must appear only at the reveal, apart from any necessary hidden configuration or source-code values.
+
+Use GSAP to coordinate the sequence:
+
+1. The camera settles into the final composition.
+2. The central planet glows.
+3. The constellation illuminates.
+4. A favourite real photograph appears.
+5. The anniversary heading fades in.
+6. The name "Jili" is revealed.
+7. The phrase "From your Pol, forever" appears.
+8. A restrained cosmic light effect provides the visual climax.
+
+The reveal should feel surprising but emotionally coherent with everything that came before it.
+
+Do not use an excessive explosion of hearts or visual effects that compete with the message.
+
+### Chapter 9 — A letter to my Munchkin
+
+After the identity reveal, create a quiet, intimate ending.
+
+The camera remains on a beautifully composed cosmic scene with the featured photograph and softly glowing stars.
+
+An elegant letter unfolds as the visitor scrolls or activates the final reveal.
+
+Use this as the starting draft:
+
+"My sweetest Munchkin,
+
+Happy two years to us.
+
+Sometimes I think about how unexpectedly our story began. A conversation became something precious, and then came that night at around 1 AM when I asked you to be mine. You said yes, and November 4 became a date I'll always hold close to my heart.
+
+"I know I'm not perfect. I can be immature, difficult, and sometimes let my anger get the better of me. I have things I want to work on, and I never want to take your patience or your love for granted.
+
+"Thank you for being beside me, for loving me through my imperfect moments, and for giving me so many reasons to keep growing. You deserve a love that keeps learning, listening, and showing up, and I want to keep working toward being that partner for you.
+
+"You've become such a beautiful part of my world, Munchkin. Of all the stars in this enormous universe, you're still the person I would look for.
+
+"Two years have passed since you said yes, and if I could return to the beginning, knowing everything I know now, I'd still choose you.
+
+"I love you, my sweet babygirl. I want to keep making memories with you, keep laughing with you, keep growing with you, and keep choosing you for all the days that come after this one.
+
+"Happy second anniversary, Jili.
+
+"Forever your Pol."
+
+This is proposed editable copy. Do not claim that Dikpal has already written or sent it.
+
+Keep the entire letter in a dedicated configuration file. I must be able to modify every sentence without editing the animation code.
+
+The letter should be readable on mobile and desktop. Use elegant typography, comfortable line spacing, and a subtle reveal animation rather than an excessively slow typewriter effect.
+
+End with a button:
+
+"Travel Through Our Universe Again"
+
+Clicking it should reset the experience and return the visitor to the beginning.
+
+## 8. Personal content configuration
+
+Create:
+
+`src/data/anniversary.ts`
+
+Keep the following information in one configuration object:
+
+- My name: Dikpal.
+- Girlfriend's name: Jili.
+- My nickname: Pol.
+- Her nickname: Munchkin.
+- Proposal date: November 4, 2024.
+- Proposal time: approximately 1 AM.
+- Anniversary date: November 4, 2026.
+- Website language: English.
+- Opening title and subtitle.
+- Chapter headings and captions.
+- Proposal chapter text.
+- Gratitude chapter text.
+- Future-oriented messages.
+- Final surprise reveal text.
+- Full anniversary letter.
+- Featured photograph identifier.
+- Optional local audio path.
+- Music enabled or disabled by default.
+
+Do not scatter these details throughout the components.
+
+Use the configuration file as the source of truth.
+
+Keep any unprovided information editable, and never invent personal facts to fill missing fields.
+
+The names should be used by the final reveal and letter, not by the opening screen.
+
+## 9. Scroll-driven animation requirements
+
+Use a pinned 3D viewport and a master GSAP timeline, or a small number of coordinated timelines.
+
+Use ScrollTrigger to synchronize:
+
+- Camera position.
+- Camera orientation.
+- Galaxy rotation.
+- Galaxy scale.
+- Planet position and scale.
+- Orbital paths.
+- Photograph-frame transforms.
+- Particle-system parameters.
+- Material opacity and colour.
+- Lighting intensity.
+- Environmental transitions.
+- Chapter typography.
+- The proposal reveal.
+- The constellation.
+- The final identity reveal.
+- The anniversary letter.
+
+Requirements:
+
+- Forward scrolling advances the narrative.
+- Backward scrolling reverses the animations naturally.
+- The scene does not reset abruptly at chapter boundaries.
+- ScrollTrigger is refreshed when layout changes require it.
+- React unmounting cleans up timelines, triggers, and listeners.
+- No duplicate timelines are created on re-renders.
+- GSAP and React do not compete over the same animated properties.
+- React state is not updated on every animation frame.
+- The camera is controlled by a clearly defined animation controller.
+- The page works when loaded at a nonzero scroll position.
+- Resizing the viewport does not break camera framing or scroll calculations.
+
+Use `gsap.context()` or another suitable lifecycle-safe integration pattern.
+
+Do not create a collection of unrelated scroll effects that happen to animate at approximately the same time.
+
+The camera choreography and scroll progression must be designed as one coherent narrative.
+
+## 10. Project architecture
+
+Inspect the existing project before finalizing the architecture.
+
+Use a maintainable structure similar to:
+
+```text
+project-root/
+├── assets/
+│   └── pictures/
+│       ├── 1.jpg
+│       ├── 2.jpg
+│       └── ...
+├── public/
+│   └── audio/
+├── src/
+│   ├── components/
+│   │   ├── ScrollChapter.tsx
+│   │   ├── MemoryFrame.tsx
+│   │   ├── MemoryViewer.tsx
+│   │   ├── AnniversaryLetter.tsx
+│   │   ├── MusicControls.tsx
+│   │   └── ChapterIndicator.tsx
+│   ├── scenes/
+│   │   ├── CosmicWorld.tsx
+│   │   ├── StarField.tsx
+│   │   ├── FormingGalaxy.tsx
+│   │   ├── MemoryPlanet.tsx
+│   │   ├── MemoryConstellation.tsx
+│   │   └── AnniversaryFinale.tsx
+│   ├── animation/
+│   │   ├── useCosmicTimeline.ts
+│   │   ├── cameraPath.ts
+│   │   └── scrollConfig.ts
+│   ├── data/
+│   │   ├── memories.ts
+│   │   └── anniversary.ts
+│   ├── styles/
+│   ├── App.tsx
+│   └── main.tsx
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── index.html
+```
+
+Adapt the architecture to the actual project. Do not create unnecessary files simply to match this example.
+
+Keep scene rendering, scroll orchestration, memory data, anniversary content, and HTML overlays separate.
+
+## 11. Performance and accessibility
+
+Aim for smooth scrolling and responsive camera movement on a modern laptop, while remaining usable on mobile.
+
+Implement:
+
+- Efficient particle systems.
+- Instanced geometry where appropriate.
+- Sensible texture sizes.
+- A device pixel ratio limit.
+- Controlled shadows and post-processing.
+- Lazy loading for nonessential photographs.
+- Correct disposal of textures and geometries.
+- Responsive canvas sizing.
+- Graceful WebGL failure handling.
+- Reduced-motion support.
+- An accessible non-WebGL fallback.
+
+Support portrait and landscape photographs without distortion.
+
+Use semantic HTML, readable text, keyboard-accessible controls, focus management for viewers, alternative text, and touch-friendly interactions.
+
+Respect `prefers-reduced-motion`. Provide a simplified experience with less camera movement and accessible memories.
+
+The anniversary letter and story must remain accessible if the 3D scene cannot render.
+
+## 12. Audio
+
+Provide optional background music with play, pause, and mute controls.
+
+Do not autoplay audio before user interaction.
+
+Use a configurable local audio path. The site must work if no music file exists.
+
+Do not automatically download copyrighted music or depend on an external music service.
+
+## 13. Privacy and frontend-only requirements
+
+The website must not require a backend, database, authentication, analytics, tracking scripts, or external APIs.
+
+Keep the photographs and personal content local to the project.
+
+Explain the privacy implications of deploying static photographs publicly.
+
+Do not publish the site, upload photographs, or deploy to a hosting provider without my explicit approval.
+
+If a private repository or local-only version is appropriate, explain the options and their limitations.
+
+## 14. Implementation workflow
+
+I will copy and paste the commands and code you provide. Build the website incrementally.
+
+### Phase 1 — Inspect the project
+
+Start by asking me to run these commands from the intended project root, adapting them as necessary:
+
+```bash
+printf '\n===== PROJECT DIRECTORY =====\n'
+pwd
+
+printf '\n===== EXISTING FILES =====\n'
+ls -la
+
+printf '\n===== AVAILABLE PHOTOGRAPHS =====\n'
+find assets/pictures -maxdepth 1 -type f -printf '%f\n' 2>/dev/null | sort -V
+
+printf '\n===== NODE VERSION =====\n'
+node --version
+
+printf '\n===== NPM VERSION =====\n'
+npm --version
+
+printf '\n===== PACKAGE CONFIGURATION =====\n'
+if [ -f package.json ]; then cat package.json; else echo "No package.json found"; fi
+```
+
+Ask me to paste the output.
+
+Determine the actual project structure, installed dependencies, package manager, and number of available photographs.
+
+Do not assume the project is empty.
+
+Do not overwrite or delete existing files or photographs.
+
+### Phase 2 — Foundation
+
+Configure or adapt the project, install compatible dependencies, and establish a working React and React Three Fiber application.
+
+Verify that the photograph directory is served correctly and at least one real photograph can load.
+
+### Phase 3 — Cosmic environment
+
+Build the star field, central point of light, galaxy, and planet.
+
+Get the scene rendering correctly before adding complex choreography.
+
+### Phase 4 — Scroll choreography
+
+Implement the pinned 3D viewport, chapter sections, and GSAP ScrollTrigger integration.
+
+Create and verify the camera path before adding all the scene effects.
+
+Test both forward and reverse scrolling.
+
+### Phase 5 — Narrative and photographs
+
+Connect the galaxy, planet, photographs, particles, lighting, and text to the scroll timeline.
+
+Implement the proposal chapter, memory sequence, constellation, and future-oriented chapter.
+
+### Phase 6 — Personal reveal
+
+Implement the final cosmic composition, identity reveal, anniversary letter, and replay action.
+
+Keep the names hidden until the intended reveal.
+
+### Phase 7 — Polish
+
+Refine typography, lighting, sound controls, accessibility, mobile responsiveness, reduced-motion support, and performance.
+
+### Phase 8 — Testing and deployment
+
+Run the production build, check TypeScript errors, inspect browser-console errors, and verify the complete scroll experience.
+
+Only after the local website works should you explain deployment options.
+
+Do not publish or deploy anything without my explicit decision.
+
+## 15. Required response format for every milestone
+
+For every implementation step, provide:
+
+**A. Objective:** What we are building.
+
+**B. Working directory:** The exact directory where commands should run.
+
+**C. Terminal commands:** Complete, copy-pasteable commands.
+
+**D. File locations:** Exact relative paths for every file.
+
+**E. Complete code:** All required imports, types, exports, styles, and supporting code.
+
+**F. Verification:** The exact command to run and the expected result.
+
+**G. Debugging:** Ask for relevant output if something fails and resolve the issue before continuing.
+
+Never tell me to put code somewhere unspecified.
+
+Never provide incomplete functions or placeholder buttons that do nothing.
+
+Never assume commands succeeded.
+
+Never claim the application works without verification.
+
+For existing files, prefer complete replacement contents when safe, or provide a precise patch with unambiguous instructions. Warn me before replacing important configuration.
+
+## 16. Definition of done
+
+The project is complete when:
+
+- The opening cosmic scene works.
+- The galaxy forms as the visitor scrolls.
+- The camera moves through a coherent 3D narrative.
+- The planet and memory photographs emerge in sequence.
+- The proposal moment at approximately 1 AM on November 4, 2024, receives a dedicated reveal.
+- The story acknowledges the two-year anniversary.
+- The gratitude chapter expresses love and personal responsibility.
+- The constellation connects selected memories.
+- The future-oriented chapter is present.
+- The names Dikpal and Jili remain hidden until the final surprise reveal.
+- The nicknames Pol and Munchkin appear naturally in the ending.
+- The anniversary letter is editable.
+- Scroll animations reverse naturally.
+- The photo viewer, audio controls, and replay action work.
+- Missing optional photographs do not crash the app.
+- The website works on desktop and mobile.
+- Reduced-motion and WebGL fallbacks exist.
+- There are no known blocking TypeScript or production-build errors.
+- The project remains frontend-only.
+- The setup and maintenance instructions are complete.
+
+## 17. Begin now
+
+Start with Phase 1 only.
+
+Ask me to inspect my existing project and photograph directory, then wait for my terminal output.
+
+Do not generate the entire codebase in one response.
+
+Build one verified milestone at a time. Tell me exactly what to copy, where to put it, which command to execute, and what I should see.
+
+The finished website should feel like a universe created around the story of Dikpal and Jili: beginning with a single point of light, growing through two years of memories, and ending with a personal surprise for Munchkin from her Pol.
+
+It should balance breathtaking 3D visuals, genuine nostalgia, playful affection, accountability, and a promise to keep choosing each other.
